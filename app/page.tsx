@@ -74,7 +74,7 @@ export default function CV() {
 						<p className="text-sm">
 							Con amplia experiencia en el rubro de eventos,
 							asistiendo en la logística del manejo de y
-							distribución de vienes durante reuniones de
+							distribución de bienes durante reuniones de
 							distintos ámbitos a los cuales asistieron multitud
 							de clientes.
 						</p>
