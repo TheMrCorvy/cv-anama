@@ -25,16 +25,28 @@ export const metadata: Metadata = {
 		description: "Currículum Vitae de Yesica Anama Rodas",
 	},
 	twitter: {
+		card: "app",
 		title: "Yesica Rodas",
-		description: "Currículum Vitae de Yesica Anama Rodas",
-		card: "summary_large_image",
-		images: [
-			{
-				url: "/background.png",
-				width: 1200,
-				height: 630,
+		description: "Curriculúm Vitae de Yesica Anama Rodas",
+		siteId: "1467726470533754880",
+		creator: "@nextjs",
+		creatorId: "1467726470533754880",
+		images: {
+			url: "https://yesicarodas.com/background.png",
+			alt: "Page Logo",
+		},
+		app: {
+			name: "twitter_app",
+			id: {
+				iphone: "twitter_app://iphone",
+				ipad: "twitter_app://ipad",
+				googleplay: "twitter_app://googleplay",
 			},
-		],
+			url: {
+				iphone: "https://iphone_url",
+				ipad: "https://ipad_url",
+			},
+		},
 	},
 	viewport: {
 		width: "device-width",
