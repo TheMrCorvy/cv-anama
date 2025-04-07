@@ -16,7 +16,7 @@ export default function robots(): MetadataRoute.Robots {
 		sitemap: "https://yesicarodas.com",
 	};
 }
-export const runtime = "edge";
+
 export const preferredRegion = "auto";
 export const fetchPriority = "high";
 export const revalidateTag = "robots";
