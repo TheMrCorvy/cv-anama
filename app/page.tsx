@@ -89,14 +89,8 @@ export default function CV() {
 							caja.
 						</p>
 						<h4 className="font-bold text-lg mb-1 mt-5">
-							Cuidados Personales y Servicios de Limpieza:
+							Servicios de Limpieza:
 						</h4>
-						<p className="text-sm mb-2">
-							Ávido manejo, control y protección de pacientes con
-							discapacidad, así como adultos mayores en situación
-							de enfermedad e incapacidad cuidarse a sí mismos de
-							forma autónoma.
-						</p>
 						<p className="text-sm">
 							Sanitización de espacios y objetos de uso diario,
 							así como también la limpieza de espacios públicos y
