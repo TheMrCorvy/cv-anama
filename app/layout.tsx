@@ -19,6 +19,36 @@ export const metadata: Metadata = {
 	title: "Yesica Rodas",
 	description: "Currículum Vitae de Yesica Anama Rodas",
 	icons: { icon: "/favicon.ico" },
+	metadataBase: new URL("https://yesicarodas.com/"),
+	openGraph: {
+		title: "Yesica Rodas",
+		description: "Currículum Vitae de Yesica Anama Rodas",
+	},
+	twitter: {
+		title: "Yesica Rodas",
+		description: "Currículum Vitae de Yesica Anama Rodas",
+		card: "summary_large_image",
+		images: [
+			{
+				url: "/background.png",
+				width: 1200,
+				height: 630,
+			},
+		],
+	},
+	viewport: {
+		width: "device-width",
+		initialScale: 1,
+		maximumScale: 1,
+		minimumScale: 1,
+		userScalable: false,
+	},
+	appleWebApp: {
+		title: "Yesica Rodas",
+		statusBarStyle: "default",
+	},
+	applicationName: "Yesica Rodas",
+	themeColor: "#fff",
 };
 
 export default function RootLayout({
