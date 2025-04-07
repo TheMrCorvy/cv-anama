@@ -247,8 +247,8 @@ export default function CV() {
 							</p>
 							<p className="text-sm">
 								A pocos minutos de la estación de tren, con
-								fácil acceso múltiples zonas de la provincia de
-								Buenos Aires.
+								fácil acceso múltiples zonas de Gran Buenos
+								Aires.
 							</p>
 						</div>
 					</CardContent>
