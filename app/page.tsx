@@ -194,25 +194,9 @@ export default function CV() {
 					<CardContent className="space-y-4">
 						<Separator />
 						<p className="text-xl">
-							<span className="font-bold">Email: </span>
-							<a
-								href="mailto:yesicaanama2@gmail.com"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<Button
-									variant="link"
-									size="lg"
-									className="cursor-pointer"
-								>
-									yesicaanama2@gmail.com
-								</Button>
-							</a>
-						</p>
-						<p className="text-xl">
 							<span className="font-bold">WhatsApp: </span>
 							<a
-								href="https://api.whatsapp.com/send?phone=+5491159663689&text=Hola!%20Me%20interesa%20tu%20CV"
+								href="https://api.whatsapp.com/send?phone=+5491159663689&text=Hola!%20Me%20interesa%20tu%20CV!"
 								rel="noreferrer"
 								target="_blank"
 							>
@@ -234,6 +218,22 @@ export default function CV() {
 									className="cursor-pointer"
 								>
 									+54 9 11 7605-9251
+								</Button>
+							</a>
+						</p>
+						<p className="text-xl">
+							<span className="font-bold">Email: </span>
+							<a
+								href="mailto:yesicaanama2@gmail.com"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<Button
+									variant="link"
+									size="lg"
+									className="cursor-pointer"
+								>
+									yesicaanama2@gmail.com
 								</Button>
 							</a>
 						</p>
