@@ -1,8 +1,3 @@
-import {
-	SidebarProvider,
-	SidebarTrigger,
-	SidebarInset,
-} from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -18,8 +13,6 @@ import {
 
 export default function CV() {
 	return (
-		// <SidebarProvider>
-		// 	<SidebarInset className="bg-white/20 backdrop-blur-sm">
 		<article>
 			<header className="flex h-16 shrink-0 text-center justify-center items-center gap-2 border-b border-sidebar-border bg-card">
 				<h1 className="text-2xl font-bold text-card-foreground mb-0">
@@ -257,8 +250,5 @@ export default function CV() {
 				</h1>
 			</footer>
 		</article>
-
-		// 	</SidebarInset>
-		// </SidebarProvider>
 	);
 }
