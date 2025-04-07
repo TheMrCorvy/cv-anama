@@ -242,8 +242,8 @@ export default function CV() {
 								<span className="font-bold text-lg">
 									Domicilio:{" "}
 								</span>
-								Barrio Nueve de Enero, localidad de Monte
-								Grande, Zona Sur.
+								Localidad de Monte Grande, Zona Sur, Provincia
+								de Buenos Aires.
 							</p>
 							<p className="text-sm">
 								A pocos minutos de la estación de tren, con
