@@ -210,7 +210,7 @@ export default function CV() {
 							</a>
 						</p>
 						<p className="text-xl">
-							<span className="font-bold">Sólo WhatsApp: </span>
+							<span className="font-bold">WhatsApp: </span>
 							<a
 								href="https://api.whatsapp.com/send?phone=+5491159663689&text=Hola!%20Me%20interesa%20tu%20CV"
 								rel="noreferrer"
