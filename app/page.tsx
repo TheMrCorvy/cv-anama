@@ -20,20 +20,15 @@ export default function CV() {
 				</h1>
 			</header>
 			<section className="mt-4 mb-12 flex flex-col md:flex-row lg:flex-row xl:flex-row gap-5 w-full justify-center px-6">
-				<div className="flex flex-col w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/4 text-center gap-3 mx-auto">
-					<h1 className="text-2xl font-bold text-card-foreground mb-0 block md:hidden lg:hidden xl:hidden">
-						En búsqueda de nuevas oportunidades
-					</h1>
-					<Card
-						className="mx-auto w-full h-[64vh]"
-						style={{
-							backgroundImage: "url('/assets/pfp.jpg')",
-							backgroundSize: "cover",
-							backgroundPosition: "center",
-							backgroundRepeat: "no-repeat",
-						}}
-					></Card>
-				</div>
+				<Card
+					className="mx-auto w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/4 h-[64vh]"
+					style={{
+						backgroundImage: "url('/assets/pfp.jpg')",
+						backgroundSize: "cover",
+						backgroundPosition: "center",
+						backgroundRepeat: "no-repeat",
+					}}
+				></Card>
 				<Card className="mx-auto w-full sm:w-2/3 md:w-1/2 lg:w-1/2 xl:w-1/2 h-auto">
 					<CardHeader className="pb-0 mb-0">
 						<div className="flex items-center gap-4">
