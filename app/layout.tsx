@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 		creator: "@nextjs",
 		creatorId: "1467726470533754880",
 		images: {
-			url: "https://yesicarodas.com/background.png",
+			url: "https://yesicarodas.com/assets/opengraph-image.jpg",
 			alt: "Page Logo",
 		},
 		app: {
