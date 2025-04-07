@@ -19,16 +19,21 @@ export default function CV() {
 					Yesica Anama Rodas
 				</h1>
 			</header>
-			<section className="mt-12 mb-12 flex flex-col md:flex-row lg:flex-row xl:flex-row gap-5 w-full justify-center px-6">
-				<Card
-					className="mx-auto w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/4 h-[64vh]"
-					style={{
-						backgroundImage: "url('/assets/pfp.jpg')",
-						backgroundSize: "cover",
-						backgroundPosition: "center",
-						backgroundRepeat: "no-repeat",
-					}}
-				></Card>
+			<section className="mt-4 mb-12 flex flex-col md:flex-row lg:flex-row xl:flex-row gap-5 w-full justify-center px-6">
+				<div className="flex flex-col w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/4 text-center gap-3 mx-auto">
+					<h1 className="text-2xl font-bold text-card-foreground mb-0 block md:hidden lg:hidden xl:hidden">
+						En búsqueda de nuevas oportunidades
+					</h1>
+					<Card
+						className="mx-auto w-full h-[64vh]"
+						style={{
+							backgroundImage: "url('/assets/pfp.jpg')",
+							backgroundSize: "cover",
+							backgroundPosition: "center",
+							backgroundRepeat: "no-repeat",
+						}}
+					></Card>
+				</div>
 				<Card className="mx-auto w-full sm:w-2/3 md:w-1/2 lg:w-1/2 xl:w-1/2 h-auto">
 					<CardHeader className="pb-0 mb-0">
 						<div className="flex items-center gap-4">
@@ -64,8 +69,9 @@ export default function CV() {
 						</h4>
 						<p className="text-sm">
 							Más de 5 años de experiencia profesional en el área
-							de comidas. Tanto en el apartado de ccina, como
-							atendiendo clientes de forma directa en diversos
+							de comidas. Tanto en dentro de la cocina en tareas
+							relacionadas al manejo de la comida, como atendiendo
+							clientes de forma directa en diversos
 							emprendimientos gastronómicos.
 						</p>
 						<h4 className="font-bold text-lg mb-1 mt-5">
@@ -73,17 +79,17 @@ export default function CV() {
 						</h4>
 						<p className="text-sm">
 							Con amplia experiencia en el rubro de eventos,
-							asistiendo en la logística del manejo de y
-							distribución de bienes durante reuniones de
-							distintos ámbitos a los cuales asistieron multitud
-							de clientes.
+							asistiendo en la logística del manejo de alimentos y
+							bebidas, al igual que en la distribución de bienes
+							durante reuniones de distintos ámbitos a los cuales
+							han asistido multitud de clientes.
 						</p>
 						<h4 className="font-bold text-lg mb-1 mt-5">Ventas:</h4>
 						<p className="text-sm">
 							Cuento con ligera experiencia en el área de
 							promoción de forma presencial tanto de productos
 							como servicios, así como tambien estoy ampliamente
-							capacitada para anejar el cobro directo a clientes,
+							capacitada para manejar el cobro directo a clientes,
 							y administrar el dinero que ingresa o es extraído en
 							caja.
 						</p>
@@ -93,13 +99,14 @@ export default function CV() {
 						<p className="text-sm mb-2">
 							Ávido manejo, control y protección de pacientes con
 							discapacidad, así como adultos mayores en situación
-							de enfermedad e incapacidad de autocuidados.
+							de enfermedad e incapacidad cuidarse a sí mismos de
+							forma autónoma.
 						</p>
 						<p className="text-sm">
 							Sanitización de espacios y objetos de uso diario,
 							así como también la limpieza de espacios públicos y
-							privados. Esto incluye tanto locales, asi como
-							hogares habitacionales.
+							privados. Esto incluye tanto instituciones
+							sanitarias, asi como hogares habitacionales.
 						</p>
 					</CardContent>
 				</Card>
@@ -198,16 +205,40 @@ export default function CV() {
 								target="_blank"
 								rel="noreferrer"
 							>
-								<Button variant="link" size="lg">
+								<Button
+									variant="link"
+									size="lg"
+									className="cursor-pointer"
+								>
 									yesicaanama2@gmail.com
+								</Button>
+							</a>
+						</p>
+						<p className="text-xl">
+							<span className="font-bold">Sólo WhatsApp: </span>
+							<a
+								href="https://api.whatsapp.com/send?phone=+5491159663689&text=Hola!%20Me%20interesa%20tu%20CV"
+								rel="noreferrer"
+								target="_blank"
+							>
+								<Button
+									variant="link"
+									size="lg"
+									className="cursor-pointer"
+								>
+									+54 9 11 5966-3689
 								</Button>
 							</a>
 						</p>
 						<p className="text-xl">
 							<span className="font-bold">Teléfono: </span>
 							<a href="tel:+5491176059251" target="_blank">
-								<Button variant="link" size="lg">
-									+54 911 7605-9251
+								<Button
+									variant="link"
+									size="lg"
+									className="cursor-pointer"
+								>
+									+54 9 11 7605-9251
 								</Button>
 							</a>
 						</p>
