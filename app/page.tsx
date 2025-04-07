@@ -70,13 +70,13 @@ export default function CV() {
 							emprendimientos gastronómicos.
 						</p>
 						<h4 className="font-bold text-lg mb-1 mt-5">
-							Área de Entretenimiento:
+							Eventos Sociales:
 						</h4>
 						<p className="text-sm">
 							Con amplia experiencia en el rubro de eventos,
 							asistiendo en la logística del manejo de alimentos y
 							bebidas, al igual que en la distribución de bienes
-							durante reuniones de distintos ámbitos a los cuales
+							durante reuniones de distintos ámbitos a las cuales
 							han asistido multitud de clientes.
 						</p>
 						<h4 className="font-bold text-lg mb-1 mt-5">Ventas:</h4>
