@@ -231,6 +231,22 @@ export default function CV() {
 								</Button>
 							</a>
 						</p>
+						<p className="text-xl">
+							<span className="font-bold">Linkedin: </span>
+							<a
+								href="www.linkedin.com/in/yesica-anama-rodas"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<Button
+									variant="link"
+									size="lg"
+									className="cursor-pointer"
+								>
+									www.linkedin.com/in/yesica-anama-rodas
+								</Button>
+							</a>
+						</p>
 						<div>
 							<p className="text-md mb-0">
 								<span className="font-bold text-lg">
