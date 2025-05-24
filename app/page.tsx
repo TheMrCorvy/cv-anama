@@ -252,7 +252,7 @@ export default function CV() {
 								<span className="font-bold text-lg">
 									Domicilio:{" "}
 								</span>
-								Localidad de Monte Grande, Zona Sur, Provincia
+								Localidad 9 de Abril, Monte Grande, Buenos Aires Zona Sur, Provincia
 								de Buenos Aires.
 							</p>
 							<p className="text-sm">
