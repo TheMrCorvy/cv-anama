@@ -190,7 +190,7 @@ export default function CV() {
 						<p className="text-xl">
 							<span className="font-bold">WhatsApp: </span>
 							<a
-								href="https://api.whatsapp.com/send?phone=+5491159663689&text=Hola!%20Me%20interesa%20tu%20CV!"
+								href="https://api.whatsapp.com/send?phone=+5491150488031&text=Hola!%20Me%20interesa%20tu%20CV!"
 								rel="noreferrer"
 								target="_blank"
 							>
@@ -199,7 +199,7 @@ export default function CV() {
 									size="lg"
 									className="cursor-pointer"
 								>
-									+54 9 11 5966-3689
+									+54 9 11 5048-8031
 								</Button>
 							</a>
 						</p>
@@ -211,7 +211,7 @@ export default function CV() {
 									size="lg"
 									className="cursor-pointer"
 								>
-									+54 9 11 7605-9251
+									+54 9 11 5048-8031
 								</Button>
 							</a>
 						</p>
@@ -252,13 +252,10 @@ export default function CV() {
 								<span className="font-bold text-lg">
 									Domicilio:{" "}
 								</span>
-								Localidad 9 de Abril, Monte Grande, Buenos Aires Zona Sur, Provincia
-								de Buenos Aires.
+								Matheu 3157, Mar Del Plata, Buenos Aires.
 							</p>
 							<p className="text-sm">
-								A pocos minutos de la estación de tren, con
-								fácil acceso múltiples zonas de Gran Buenos
-								Aires.
+								A distancia de caminata del centro.
 							</p>
 						</div>
 					</CardContent>
