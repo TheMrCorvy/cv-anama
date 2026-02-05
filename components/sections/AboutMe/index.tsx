@@ -52,16 +52,16 @@ const AboutMe: FC = () => {
                     <div className="flex flex-col h-full justify-between">
                         <h4 className="font-bold text-xl mb-1">Formación Académica</h4>
                         <div className="text-sm mb-3 md:mb-0">
-                            <div className="h-5 items-center space-x-4 text-sm mb-4 flex">
+                            <div className="h-5 items-center space-x-4 text-sm mb-4 hidden md:flex">
                                 <strong>Instituto HILET</strong>
                                 <Separator orientation="vertical" />
                                 <strong>Mar del Plata</strong>
                                 <Separator orientation="vertical" />
                                 <strong className="font-lg">Secretariado Médico</strong>
                             </div>
-                            {/* <strong className="text-sm mb-2 mt-4 block md:hidden">
+                            <strong className="text-sm mb-2 mt-4 block md:hidden">
                                 Instituto HILET, Mar del Plata: Secretariado Médico
-                            </strong> */}
+                            </strong>
                             <strong>ENERO DEL 2026 - PRESENTE</strong>
                             <br />
                             Actualmente me encuentro cursando la carrera de Secretariado Médico,
