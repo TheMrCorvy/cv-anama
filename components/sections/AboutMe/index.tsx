@@ -91,7 +91,7 @@ const AboutMe: FC = () => {
                             <div className="h-5 items-center space-x-4 text-sm mb-4 hidden md:flex">
                                 <strong>Instituto LACA</strong>
                                 <Separator orientation="vertical" />
-                                <strong>Capital Federa</strong>
+                                <strong>Capital Federal</strong>
                                 <Separator orientation="vertical" />
                                 <strong className="font-lg">Cosmetología</strong>
                             </div>
