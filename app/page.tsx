@@ -10,6 +10,7 @@ import {
     CardTitle,
 } from '@/components/ui/card';
 import { FaWhatsapp, FaPhone, FaEnvelope, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
+import { Alert } from '@/components/ui/alert';
 
 export default function CV() {
     return (
@@ -104,59 +105,83 @@ export default function CV() {
                         </div>
                         <Separator />
                     </CardHeader>
-                    {/* This card should contain 2 columns on desktop and 1 in mobile. */}
-                    {/* The 2 columns in desktop should read the work experience from left to right, up to down */}
-                    {/* Then in mobile, the work experience should be a column as it is right now, from up to down */}
-                    <CardContent className="space-y-4" id="work-experience">
-                        <h4 className="font-bold text-lg mb-1">
-                            Pizzería Ri-K, Capital Federal: Ayudante de Cocina
-                        </h4>
-                        <p className="text-sm">
-                            DICIEMBRE DEL 2020 - Enero 2026
-                            <br />
-                            Apoyando en la preparación, organización y mantenimiento del área de
-                            trabajo.
-                        </p>
-                        <h4 className="font-bold text-lg mb-1 mt-5">
-                            Granja Pío, Capital Federal: Atención al Cliente
-                        </h4>
-                        <p className="text-sm">
-                            MAYO DEL 2023 - DICIEMBRE DEL 2023
-                            <br />
-                            Atención al cliente y preparación de alimentos en pollería, manejo de
-                            caja y limpieza.
-                        </p>
-                        <h4 className="font-bold text-lg mb-1 mt-5">
-                            Quinta La Caprichosa, Capital Federal: Mesera de Eventos
-                        </h4>
-                        <p className="text-sm">
-                            ENERO DEL 2021 - MAYO DEL 2023
-                            <br />
-                            Servicio de mesa en eventos, atención al cliente, montaje y desmontaje,
-                            toma de pedidos.
-                        </p>
-                        <h4 className="font-bold text-lg mb-1 mt-5">
-                            El Obrador, Capital Federal: Ayudante de Panadería
-                        </h4>
-                        <p className="text-sm">
-                            ABRIL DEL 2020 - DICIEMBRE DEL 2020
-                            <br />
-                            Apoyo en producción, atención al cliente Limpieza, embalaje y reposición
-                            de productos.
-                        </p>
-                        <h4 className="font-bold text-lg mb-1 mt-5">
-                            Zoquete Molinete, Capital Federal: Ayudante de Cocina
-                        </h4>
-                        <p className="text-sm">
-                            ABRIL DEL 2019 - MARZO DEL 2020
-                            <br />
-                            Colaboración en la elaboración, orden y limpieza del espacio de trabajo.
-                        </p>
+                    <CardContent className="flex flex-col gap-2" id="work-experience">
+                        <div className="w-full flex flex-col md:flex-row gap-0 md:gap-8">
+                            <Alert className="flex w-full md:w-1/2 flex-row mb-4">
+                                <div className="flex flex-col w-full">
+                                    <h4 className="font-bold text-lg mb-1">
+                                        Pizzería Ri-K, Capital Federal: Ayudante de Cocina
+                                    </h4>
+                                    <p className="text-sm">
+                                        <strong>DICIEMBRE DEL 2020 - Enero 2026</strong>
+                                        <br />
+                                        Apoyando en la preparación, organización y mantenimiento del
+                                        área de trabajo.
+                                    </p>
+                                </div>
+                            </Alert>
+                            <Alert className="flex w-full md:w-1/2 flex-row mb-4">
+                                <div className="flex flex-col w-full">
+                                    <h4 className="font-bold text-lg mb-1">
+                                        Granja Pío, Capital Federal: Atención al Cliente
+                                    </h4>
+                                    <p className="text-sm">
+                                        <strong>MAYO DEL 2023 - DICIEMBRE DEL 2023</strong>
+                                        <br />
+                                        Atención al cliente y preparación de alimentos en pollería,
+                                        manejo de caja y limpieza.
+                                    </p>
+                                </div>
+                            </Alert>
+                        </div>
+                        <div className="w-full flex flex-col md:flex-row gap-0 md:gap-8">
+                            <Alert className="flex w-full md:w-1/2 flex-row mb-4">
+                                <div className="flex flex-col w-full">
+                                    <h4 className="font-bold text-lg mb-1">
+                                        Quinta La Caprichosa, Capital Federal: Mesera de Eventos
+                                    </h4>
+                                    <p className="text-sm">
+                                        <strong>ENERO DEL 2021 - MAYO DEL 2023</strong>
+                                        <br />
+                                        Servicio de mesa en eventos, atención al cliente, montaje y
+                                        desmontaje, toma de pedidos.
+                                    </p>
+                                </div>
+                            </Alert>
+                            <Alert className="flex w-full md:w-1/2 flex-row mb-4">
+                                <div className="flex flex-col w-full">
+                                    <h4 className="font-bold text-lg mb-1">
+                                        El Obrador, Capital Federal: Ayudante de Panadería
+                                    </h4>
+                                    <p className="text-sm">
+                                        <strong>ABRIL DEL 2020 - DICIEMBRE DEL 2020</strong>
+                                        <br />
+                                        Apoyo en producción, atención al cliente Limpieza, embalaje
+                                        y reposición de productos.
+                                    </p>
+                                </div>
+                            </Alert>
+                        </div>
+                        <div className="w-full flex justify-center">
+                            <Alert className="flex w-full md:w-1/2 flex-row">
+                                <div className="w-full">
+                                    <h4 className="font-bold text-lg mb-1">
+                                        Zoquete Molinete, Capital Federal: Ayudante de Cocina
+                                    </h4>
+                                    <p className="text-sm">
+                                        <strong>ABRIL DEL 2019 - MARZO DEL 2020</strong>
+                                        <br />
+                                        Colaboración en la elaboración, orden y limpieza del espacio
+                                        de trabajo.
+                                    </p>
+                                </div>
+                            </Alert>
+                        </div>
                     </CardContent>
                 </Card>
             </section>
             <section
-                className="mt-12 mb-12 flex flex-col gap-5 w-full justify-center px-6"
+                className="mt-12 mb-12 flex flex-col md:flex-row md:justify-around gap-5 w-full justify-center px-6"
                 id="skills-and-achievements"
             >
                 {/* These 2 cards should be aligned in the same row when the user visits the page on desktop, and switch to flex-col on mobile */}
