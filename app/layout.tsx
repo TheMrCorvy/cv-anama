@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 import { Geist, Geist_Mono } from 'next/font/google';
@@ -14,6 +14,10 @@ const geistMono = Geist_Mono({
     variable: '--font-geist-mono',
     subsets: ['latin'],
 });
+
+export const viewport: Viewport = {
+    themeColor: '#fff',
+};
 
 export const metadata: Metadata = {
     title: 'Yesica Rodas',
@@ -53,7 +57,6 @@ export const metadata: Metadata = {
         statusBarStyle: 'default',
     },
     applicationName: 'Yesica Rodas',
-    themeColor: '#fff',
 };
 
 export default function RootLayout({
