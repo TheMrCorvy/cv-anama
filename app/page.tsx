@@ -50,7 +50,7 @@ export default function CV() {
                             </div>
                         </div>
                     </CardHeader>
-                    <CardContent className="space-y-4">
+                    <CardContent className="space-y-4 h-auto">
                         <div className="flex justify-center">
                             <div className="text-center">
                                 <p className="text-2xl font-bold">Acerca de Mí</p>
@@ -64,34 +64,62 @@ export default function CV() {
                             </div>
                         </div>
                         <Separator />
-                        <h4 className="font-bold text-lg mb-1">Formación Académica</h4>
-                        <p className="text-sm">
-                            <strong>Instituto HILET, Mar Del Plata: Secretariado Médico</strong>
-                            <br />
-                            ENERO DEL 2026 - PRESENTE
-                            <br />
-                            Actualmente me encuentro cursando la carrera de Secretariado Médico,
-                            basada en facturar, organizar, recibir y retribuir todo lo relacionado
-                            con asuntos médicos.
-                        </p>
-                        <p className="text-sm">
-                            <strong>Instituto LACA, Capital Federal: Cosmiatría</strong>
-                            <br />
-                            OCTUBRE DEL 2025 - DICIEMBRE DEL 2025
-                            <br />
-                            Graduada a finales del año 2025 en Cosmiatría, la especialización de
-                            Cosmetología para combatir el envejecimiento de la piel en distintas
-                            áreas del cuerpo.
-                        </p>
-                        <p className="text-sm">
-                            <strong>Instituto LACA, Capital Federal: Cosmetología</strong>
-                            <br />
-                            JUNIO DEL 2025 - OCTUBRE DEL 2025
-                            <br />
-                            Con diploma en Cosmetología, con nota promedio de 8, y enfocada en el
-                            tratamiento y cuidado de la piel, así como también para combatir el
-                            envejecimiento y mejorar la belleza natural de los pacientes.
-                        </p>
+                        <div className="flex flex-col h-full justify-between">
+                            <h4 className="font-bold text-xl mb-1">Formación Académica</h4>
+                            <div className="text-sm mb-3 md:mb-0">
+                                <div className="h-5 items-center space-x-4 text-sm mb-4 hidden md:flex">
+                                    <strong>Instituto HILET</strong>
+                                    <Separator orientation="vertical" />
+                                    <strong>Mar del Plata</strong>
+                                    <Separator orientation="vertical" />
+                                    <strong className="font-lg">Secretariado Médico</strong>
+                                </div>
+                                <strong className="text-sm mb-2 mt-4 block md:hidden">
+                                    Instituto HILET, Mar del Plata: Secretariado Médico
+                                </strong>
+                                <strong>ENERO DEL 2026 - PRESENTE</strong>
+                                <br />
+                                Actualmente me encuentro cursando la carrera de Secretariado Médico,
+                                basada en facturar, organizar, recibir y retribuir todo lo
+                                relacionado con asuntos médicos.
+                            </div>
+                            <Separator />
+                            <div className="text-sm mb-3 md:mb-0">
+                                <div className="h-5 items-center space-x-4 text-sm mb-4 hidden md:flex">
+                                    <strong>Instituto LACA</strong>
+                                    <Separator orientation="vertical" />
+                                    <strong>Capital Federal</strong>
+                                    <Separator orientation="vertical" />
+                                    <strong className="font-lg">Cosmiatría</strong>
+                                </div>
+                                <strong className="text-sm mb-2 mt-4 block md:hidden">
+                                    Instituto LACA, Capital Federal: Cosmiatría
+                                </strong>
+                                <strong>OCTUBRE DEL 2025 - DICIEMBRE DEL 2025</strong>
+                                <br />
+                                Graduada a finales del año 2025 en Cosmiatría, la especialización de
+                                Cosmetología para combatir el envejecimiento de la piel en distintas
+                                áreas del cuerpo.
+                            </div>
+                            <Separator />
+                            <div className="text-sm mb-3 md:mb-0">
+                                <div className="h-5 items-center space-x-4 text-sm mb-4 hidden md:flex">
+                                    <strong>Instituto LACA</strong>
+                                    <Separator orientation="vertical" />
+                                    <strong>Capital Federa</strong>
+                                    <Separator orientation="vertical" />
+                                    <strong className="font-lg">Cosmetología</strong>
+                                </div>
+                                <strong className="text-sm mb-2 mt-4 block md:hidden">
+                                    Instituto LACA, Capital Federal: Cosmetología
+                                </strong>
+                                <strong>JUNIO DEL 2025 - OCTUBRE DEL 2025</strong>
+                                <br />
+                                Con diploma en Cosmetología, con nota promedio de 8, y enfocada en
+                                el tratamiento y cuidado de la piel, así como también para combatir
+                                el envejecimiento y mejorar la belleza natural de los pacientes.
+                            </div>
+                        </div>
                     </CardContent>
                 </Card>
             </section>
