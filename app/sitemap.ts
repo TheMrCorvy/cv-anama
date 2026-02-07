@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			},
 		},
 		{
-			url: "https://acme.com/assets/cv.pdf",
+			url: "https://yesicarodas.com/cv.pdf",
 			lastModified: "2025-04-07",
 			changeFrequency: "monthly",
 			priority: 0.8,
