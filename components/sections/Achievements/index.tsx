@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
 import {
     Accordion,
     AccordionContent,
@@ -22,7 +21,6 @@ const Achievements: FC = () => {
                 </div>
             </CardHeader>
             <CardContent className="space-y-4">
-                <Separator />
                 <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="achievements-item-1">
                         <AccordionTrigger>
