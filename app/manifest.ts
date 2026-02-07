@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
 	return {
 		name: "Yesica Anama Rodas",
 		short_name: "Yesica Rodas",
-		description: "Curriculum Vitae of Yesica Anama Rodas",
+		description: "Curriculum Vitae de Yesica Anama Rodas",
 		start_url: "/",
 		display: "standalone",
 		background_color: "#fff",
