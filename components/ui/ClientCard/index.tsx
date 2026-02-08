@@ -22,7 +22,7 @@ const ClientCard: FC<ClientCardProps> = ({ children, className, delay = 2000, ..
         }, delay);
 
         return () => clearTimeout(timer);
-    }, []);
+    }, [delay]);
 
     return (
         <Card {...props} className={'relative ' + className}>
