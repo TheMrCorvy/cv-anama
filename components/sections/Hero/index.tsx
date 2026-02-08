@@ -7,7 +7,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const HeroSection: FC = () => {
     return (
-        <article className="relative w-full py-16 px-4">
+        <article className="relative w-full pb-16 pt-8 md:pt-16 px-4">
             {/* Background soft gradient */}
             <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background via-background/90 to-transparent" />
 
@@ -18,10 +18,13 @@ const HeroSection: FC = () => {
                 >
                     <CardHeader className="text-center">
                         <h6 className="flex justify-center px-4 pt-1 text-xs md:text-sm">
-                            Cosmetóloga & Cosmiatra Graduada del Instituto LACA
+                            Cosmetóloga & Cosmiatra
                         </h6>
 
-                        <CardTitle element='h1' className="text-3xl md:text-4xl font-semibold tracking-tight mb-4 mt-1">
+                        <CardTitle
+                            element="h1"
+                            className="text-3xl md:text-4xl font-semibold tracking-tight mb-4 mt-1"
+                        >
                             Yesica Anama Rodas
                         </CardTitle>
 
@@ -33,7 +36,7 @@ const HeroSection: FC = () => {
                     </CardHeader>
 
                     <CardContent className="space-y-6">
-                        <Separator />
+                        <Separator className='max-w-xl mx-auto' />
 
                         <div className="mx-auto max-w-4xl text-center space-y-4 py-8">
                             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
@@ -56,7 +59,7 @@ const HeroSection: FC = () => {
                             className="px-0 md:px-12 w-full md:w-auto min-h-4 flex flex-col items-center gap-4 bg-transparent shadow-lg"
                         >
                             <Link
-                                href="https://wa.me/5491150488031"
+                                href="https://api.whatsapp.com/send?phone=+5491150488031&text=Hola!%20Me%20gustaría%20hacer%20una%20consulta..."
                                 className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-md transition hover:opacity-90 gap-4"
                             >
                                 <FaWhatsapp size={24} />

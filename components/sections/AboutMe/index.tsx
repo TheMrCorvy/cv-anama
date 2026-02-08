@@ -41,7 +41,7 @@ const AboutMe: FC = () => {
                         </Avatar>
 
                         <div>
-                            <CardTitle className="text-2xl md:text-3xl">
+                            <CardTitle className="text-xl md:text-3xl">
                                 Yesica Anama Rodas
                             </CardTitle>
                             <CardDescription className="text-base">
@@ -54,7 +54,6 @@ const AboutMe: FC = () => {
                 </CardHeader>
 
                 <CardContent className="space-y-8">
-                    {/* Texto principal */}
                     <div className="space-y-4 max-w-3xl">
                         <h3 className="text-xl font-semibold">Acerca de mí</h3>
 
@@ -74,7 +73,6 @@ const AboutMe: FC = () => {
 
                     <Separator />
 
-                    {/* Enfoque profesional */}
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         <div>
                             <h4 className="font-medium mb-2">Evaluación consciente</h4>
@@ -123,7 +121,7 @@ const AboutMe: FC = () => {
                                                 <p>2026</p>
                                                 <Separator orientation="vertical" />
                                             </div>
-                                            <div className="h-full flex flex-row justify-between w-[8rem]">
+                                            <div className="h-full flex flex-row justify-between w-[7rem]">
                                                 <p>Mar del Plata</p>
                                                 <Separator orientation="vertical" />
                                             </div>
@@ -134,8 +132,9 @@ const AboutMe: FC = () => {
                                             </div>
                                         </span>
                                         <p className="text-sm mb-2 mt-4 block lg:hidden">
-                                            • Secretariado Médico (en curso) – Instituto HILET, Mar
-                                            del Plata - 2026
+                                            • Secretariado Médico (en curso)
+                                            <br />
+                                            Instituto HILET, Mar del Plata - 2026
                                         </p>
                                     </li>
                                     <li>
@@ -148,7 +147,7 @@ const AboutMe: FC = () => {
                                                 <p>2025</p>
                                                 <Separator orientation="vertical" />
                                             </div>
-                                            <div className="h-full flex flex-row justify-between w-[8rem]">
+                                            <div className="h-full flex flex-row justify-between w-[7rem]">
                                                 <p>Capital Federal</p>
                                                 <Separator orientation="vertical" />
                                             </div>
@@ -157,7 +156,9 @@ const AboutMe: FC = () => {
                                             </div>
                                         </span>
                                         <p className="text-sm mb-2 mt-4 block lg:hidden">
-                                            • Cosmiatría – Instituto LACA (Capital Federal) - 2025
+                                            • Cosmiatría
+                                            <br />
+                                            Instituto LACA, Capital Federal - 2025
                                         </p>
                                     </li>
                                     <li>
@@ -170,7 +171,7 @@ const AboutMe: FC = () => {
                                                 <p>2025</p>
                                                 <Separator orientation="vertical" />
                                             </div>
-                                            <div className="h-full flex flex-row justify-between w-[8rem]">
+                                            <div className="h-full flex flex-row justify-between w-[7rem]">
                                                 <p>Capital Federal</p>
                                                 <Separator orientation="vertical" />
                                             </div>
@@ -179,7 +180,8 @@ const AboutMe: FC = () => {
                                             </div>
                                         </span>
                                         <p className="text-sm mb-2 mt-4 block lg:hidden">
-                                            • Cosmetología – Instituto LACA (Capital Federal) - 2025
+                                            • Cosmetología <br />
+                                            Instituto LACA Capital Federal - 2025
                                         </p>
                                     </li>
                                 </ol>
