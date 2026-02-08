@@ -4,8 +4,8 @@ import { Analytics } from '@vercel/analytics/react';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Head from 'next/head';
-import Navbar from '@/components/sections/Navbar';
 import Footer from '@/components/sections/Footer';
+import NavbarOnScroll from '@/components/sections/Navbar/NavbarOnScroll';
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -88,7 +88,7 @@ export default function RootLayout({
                 </script>
             </Head>
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-                <Navbar />
+                <NavbarOnScroll />
                 {children}
                 <Footer />
                 <SpeedInsights />
