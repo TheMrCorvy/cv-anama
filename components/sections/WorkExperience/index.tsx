@@ -10,7 +10,7 @@ const WorkExperience: FC = () => {
                 <CardHeader className="pb-2">
                     <div className="flex justify-center">
                         <div className="text-center">
-                            <h3 className="text-2xl font-bold">Experiencia Laboral</h3>
+                            <h3 className="text-2xl font-bold">Experiencia Laboral No Relacionada</h3>
                         </div>
                     </div>
                     <Separator />
