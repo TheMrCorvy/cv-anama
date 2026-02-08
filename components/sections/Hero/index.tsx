@@ -21,15 +21,15 @@ const HeroSection: FC = () => {
                             Cosmetóloga & Cosmiatra Graduada del Instituto LACA
                         </h6>
 
-                        <CardTitle className="text-3xl md:text-4xl font-semibold tracking-tight mb-4 mt-1">
+                        <CardTitle element='h1' className="text-3xl md:text-4xl font-semibold tracking-tight mb-4 mt-1">
                             Yesica Anama Rodas
                         </CardTitle>
 
-                        <p className="mx-auto max-w-4xl text-muted-foreground text-base md:text-lg leading-relaxed">
+                        <h5 className="mx-auto max-w-4xl text-muted-foreground text-base md:text-lg leading-relaxed">
                             Atención estética profesional enfocada en el cuidado integral de la
                             piel, con tratamientos personalizados, fundamentos académicos sólidos y
                             un enfoque responsable en cada consulta.
-                        </p>
+                        </h5>
                     </CardHeader>
 
                     <CardContent className="space-y-6">
@@ -50,8 +50,11 @@ const HeroSection: FC = () => {
                         </div>
                     </CardContent>
 
-                    <CardFooter className='flex justify-center'>
-                        <ClientCard className="px-0 md:px-12 w-full md:w-auto min-h-4 flex flex-col items-center gap-4 bg-transparent shadow-lg">
+                    <CardFooter className="flex justify-center">
+                        <ClientCard
+                            delay={0}
+                            className="px-0 md:px-12 w-full md:w-auto min-h-4 flex flex-col items-center gap-4 bg-transparent shadow-lg"
+                        >
                             <Link
                                 href="https://wa.me/5491150488031"
                                 className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-md transition hover:opacity-90 gap-4"

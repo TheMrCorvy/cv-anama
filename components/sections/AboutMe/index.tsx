@@ -1,13 +1,26 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { FC } from 'react';
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from '@/components/ui/accordion';
 
 const AboutMe: FC = () => {
     return (
         <article
             className="mt-4 mb-12 flex flex-col md:flex-row lg:flex-row xl:flex-row gap-5 w-full justify-center px-6"
-            id="about"
+            id="about-me"
         >
             <Card
                 element="section"
@@ -19,93 +32,166 @@ const AboutMe: FC = () => {
                     backgroundRepeat: 'no-repeat',
                 }}
             ></Card>
-            <Card
-                element="section"
-                className="mx-auto w-full sm:w-2/3 md:w-1/2 lg:w-1/2 xl:w-1/2 h-auto"
-            >
-                <CardHeader className="pb-0 mb-0">
-                    <div className="flex items-center gap-4">
-                        <Avatar className="h-16 w-16">
+            <Card className="mx-auto w-full sm:w-2/3 md:w-1/2 lg:w-1/2 xl:w-1/2 bg-background/80 backdrop-blur-sm border-muted/50">
+                <CardHeader className="space-y-6">
+                    <div className="flex items-center gap-5">
+                        <Avatar className="h-20 w-20">
                             <AvatarImage src="/assets/pfp_square.jpg" alt="Yesica Anama Rodas" />
                             <AvatarFallback>YR</AvatarFallback>
                         </Avatar>
+
                         <div>
-                            <CardTitle>Yesica Anama Rodas</CardTitle>
-                            <CardDescription>Cosmetóloga y Cosmiatra</CardDescription>
+                            <CardTitle className="text-2xl md:text-3xl">
+                                Yesica Anama Rodas
+                            </CardTitle>
+                            <CardDescription className="text-base">
+                                Cosmetóloga y Cosmiatra graduada
+                            </CardDescription>
                         </div>
                     </div>
+
+                    <Separator />
                 </CardHeader>
-                <CardContent className="space-y-4 h-auto">
-                    <div className="flex justify-center">
-                        <div className="text-center">
-                            <p className="text-2xl font-bold">Acerca de Mí</p>
+
+                <CardContent className="space-y-8">
+                    {/* Texto principal */}
+                    <div className="space-y-4 max-w-3xl">
+                        <h3 className="text-xl font-semibold">Acerca de mí</h3>
+
+                        <p className="text-muted-foreground leading-relaxed">
+                            Soy cosmetóloga y cosmiatra graduada del Instituto LACA, con formación
+                            teórica y práctica en el cuidado integral de la piel. Mi enfoque se basa
+                            en la evaluación personalizada, el respeto por los tiempos de cada piel
+                            y la aplicación responsable de tratamientos estéticos.
+                        </p>
+
+                        <p className="text-muted-foreground leading-relaxed">
+                            Al haber finalizado recientemente mi formación, trabajo con protocolos
+                            actuales y una atención detallada, dedicando el tiempo necesario a cada
+                            consulta para que el paciente se sienta acompañado, informado y seguro.
+                        </p>
+                    </div>
+
+                    <Separator />
+
+                    {/* Enfoque profesional */}
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <div>
+                            <h4 className="font-medium mb-2">Evaluación consciente</h4>
                             <p className="text-sm text-muted-foreground">
-                                Graduada del instituto LACA con diplomas en Cosmetología y
-                                Cosmiatría. Altamente capacitada para asistir a pacientes en áreas
-                                relacionadas al cuidado de la piel, mantener y mejorar la belleza
-                                natural, aplicar tratamientos mediante distintos productos y/o
-                                herramientas, entre otras.
+                                Cada tratamiento comienza con una evaluación previa para entender el
+                                estado real de la piel y definir el abordaje más adecuado.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 className="font-medium mb-2">Formación actualizada</h4>
+                            <p className="text-sm text-muted-foreground">
+                                Trabajo con conocimientos recientes y técnicas aprendidas durante mi
+                                formación académica y prácticas supervisadas.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 className="font-medium mb-2">Acompañamiento cercano</h4>
+                            <p className="text-sm text-muted-foreground">
+                                Priorizo una atención clara y humana, explicando cada paso del
+                                tratamiento y los cuidados necesarios.
                             </p>
                         </div>
                     </div>
+
                     <Separator />
-                    <div className="flex flex-col h-full justify-between">
-                        <h4 className="font-bold text-xl mb-1">Formación Académica</h4>
-                        <div className="text-sm mb-3 md:mb-0">
-                            <div className="h-5 items-center space-x-4 text-sm mb-4 hidden md:flex">
-                                <strong>Instituto HILET</strong>
-                                <Separator orientation="vertical" />
-                                <strong>Mar del Plata</strong>
-                                <Separator orientation="vertical" />
-                                <strong className="font-lg">Secretariado Médico</strong>
-                            </div>
-                            <strong className="text-sm mb-2 mt-4 block md:hidden">
-                                Instituto HILET, Mar del Plata: Secretariado Médico
-                            </strong>
-                            <strong>ENERO DEL 2026 - PRESENTE</strong>
-                            <br />
-                            Actualmente me encuentro cursando la carrera de Secretariado Médico,
-                            basada en facturar, organizar, recibir y retribuir todo lo relacionado
-                            con asuntos médicos.
-                        </div>
-                        <Separator />
-                        <div className="text-sm mb-3 md:mb-0">
-                            <div className="h-5 items-center space-x-4 text-sm mb-4 hidden md:flex">
-                                <strong>Instituto LACA</strong>
-                                <Separator orientation="vertical" />
-                                <strong>Capital Federal</strong>
-                                <Separator orientation="vertical" />
-                                <strong className="font-lg">Cosmiatría</strong>
-                            </div>
-                            <strong className="text-sm mb-2 mt-4 block md:hidden">
-                                Instituto LACA, Capital Federal: Cosmiatría
-                            </strong>
-                            <strong>OCTUBRE DEL 2025 - DICIEMBRE DEL 2025</strong>
-                            <br />
-                            Graduada a finales del año 2025 en Cosmiatría, la especialización de
-                            Cosmetología para combatir el envejecimiento de la piel en distintas
-                            áreas del cuerpo.
-                        </div>
-                        <Separator />
-                        <div className="text-sm mb-3 md:mb-0">
-                            <div className="h-5 items-center space-x-4 text-sm mb-4 hidden md:flex">
-                                <strong>Instituto LACA</strong>
-                                <Separator orientation="vertical" />
-                                <strong>Capital Federal</strong>
-                                <Separator orientation="vertical" />
-                                <strong className="font-lg">Cosmetología</strong>
-                            </div>
-                            <strong className="text-sm mb-2 mt-4 block md:hidden">
-                                Instituto LACA, Capital Federal: Cosmetología
-                            </strong>
-                            <strong>JUNIO DEL 2025 - OCTUBRE DEL 2025</strong>
-                            <br />
-                            Con diploma en Cosmetología, con nota promedio de 8, y enfocada en el
-                            tratamiento y cuidado de la piel, así como también para combatir el
-                            envejecimiento y mejorar la belleza natural de los pacientes.
-                        </div>
-                    </div>
                 </CardContent>
+                <CardFooter className="space-y-0">
+                    <Accordion
+                        type="single"
+                        collapsible
+                        className="w-full border py-2 px-4 rounded-xl hover:cursor-pointer mt-2"
+                    >
+                        <AccordionItem value="about-me-professional-formation">
+                            <AccordionTrigger>Formación académica</AccordionTrigger>
+                            <AccordionContent className="space-y-3 text-sm text-muted-foreground">
+                                <ol>
+                                    <li>
+                                        <span className="h-5 items-center space-x-4 text-sm mb-4 hidden lg:flex min-h-4">
+                                            <div className="h-full flex flex-row justify-between w-[9rem]">
+                                                <p>• Instituto HILET</p>
+                                                <Separator orientation="vertical" />
+                                            </div>
+                                            <div className="h-full flex flex-row justify-between w-[3rem]">
+                                                <p>2026</p>
+                                                <Separator orientation="vertical" />
+                                            </div>
+                                            <div className="h-full flex flex-row justify-between w-[8rem]">
+                                                <p>Mar del Plata</p>
+                                                <Separator orientation="vertical" />
+                                            </div>
+                                            <div className="h-full flex flex-row justify-between w-[15rem]">
+                                                <p className="font-lg">
+                                                    Secretariado Médico (en curso)
+                                                </p>
+                                            </div>
+                                        </span>
+                                        <p className="text-sm mb-2 mt-4 block lg:hidden">
+                                            • Secretariado Médico (en curso) – Instituto HILET, Mar
+                                            del Plata - 2026
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span className="h-5 items-center space-x-4 text-sm mb-4 hidden lg:flex min-h-4">
+                                            <div className="h-full flex flex-row justify-between w-[9rem]">
+                                                <p>• Instituto LACA</p>
+                                                <Separator orientation="vertical" />
+                                            </div>
+                                            <div className="h-full flex flex-row justify-between w-[3rem]">
+                                                <p>2025</p>
+                                                <Separator orientation="vertical" />
+                                            </div>
+                                            <div className="h-full flex flex-row justify-between w-[8rem]">
+                                                <p>Capital Federal</p>
+                                                <Separator orientation="vertical" />
+                                            </div>
+                                            <div className="h-full flex flex-row justify-between w-[15rem]">
+                                                <p className="font-lg">Cosmiatría</p>
+                                            </div>
+                                        </span>
+                                        <p className="text-sm mb-2 mt-4 block lg:hidden">
+                                            • Cosmiatría – Instituto LACA (Capital Federal) - 2025
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span className="h-5 items-center space-x-4 text-sm mb-4 hidden lg:flex min-h-4">
+                                            <div className="h-full flex flex-row justify-between w-[9rem]">
+                                                <p>• Instituto LACA</p>
+                                                <Separator orientation="vertical" />
+                                            </div>
+                                            <div className="h-full flex flex-row justify-between w-[3rem]">
+                                                <p>2025</p>
+                                                <Separator orientation="vertical" />
+                                            </div>
+                                            <div className="h-full flex flex-row justify-between w-[8rem]">
+                                                <p>Capital Federal</p>
+                                                <Separator orientation="vertical" />
+                                            </div>
+                                            <div className="h-full flex flex-row justify-between w-[15rem]">
+                                                <p className="font-lg">Cosmetología</p>
+                                            </div>
+                                        </span>
+                                        <p className="text-sm mb-2 mt-4 block lg:hidden">
+                                            • Cosmetología – Instituto LACA (Capital Federal) - 2025
+                                        </p>
+                                    </li>
+                                </ol>
+                                <p className="pt-2">
+                                    Durante mi formación realicé prácticas con pacientes reales,
+                                    aplicando tratamientos bajo criterios profesionales y
+                                    académicos.
+                                </p>
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
+                </CardFooter>
             </Card>
         </article>
     );

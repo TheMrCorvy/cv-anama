@@ -18,6 +18,7 @@ const Contact: FC<ContactSectionProps> = ({ linkForCv = false }) => {
             id="contact-info"
         >
             <ClientCard
+                delay={3000}
                 element="section"
                 className="mx-auto w-full sm:w-2/3 md:w-1/2 lg:w-1/2 xl:w-1/2 h-auto"
             >

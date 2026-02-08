@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { Card, CardProps } from '../card';
 import Spinner from '../Spinner';
 import dynamic from 'next/dynamic';
@@ -9,13 +9,17 @@ const DynamicComponent = dynamic(() => import('./DynamicComponent'), {
     loading: () => <Spinner />,
 });
 
-const ClientCard = ({ children, className, ...props }: CardProps) => {
+export interface ClientCardProps extends CardProps {
+    delay?: number
+}
+
+const ClientCard: FC<ClientCardProps> = ({ children, className, delay = 2000, ...props }) => {
     const [showContent, setShowContent] = useState(false);
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowContent(true);
-        }, 3000);
+        }, delay);
 
         return () => clearTimeout(timer);
     }, []);
