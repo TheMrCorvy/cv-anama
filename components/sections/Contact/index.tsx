@@ -1,10 +1,11 @@
 import { FC } from 'react';
 
-import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
+import { CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { FaWhatsapp, FaPhone, FaEnvelope, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import ClientCard from '@/components/ui/ClientCard';
 
 export interface ContactSectionProps {
     linkForCv?: boolean;
@@ -16,7 +17,7 @@ const Contact: FC<ContactSectionProps> = ({ linkForCv = false }) => {
             className="mt-12 mb-12 flex flex-col gap-5 w-full justify-center px-6"
             id="contact-info"
         >
-            <Card
+            <ClientCard
                 element="section"
                 className="mx-auto w-full sm:w-2/3 md:w-1/2 lg:w-1/2 xl:w-1/2 h-auto"
             >
@@ -97,7 +98,7 @@ const Contact: FC<ContactSectionProps> = ({ linkForCv = false }) => {
                 <CardFooter className="flex justify-center">
                     {linkForCv && (
                         <Button size="lg" className="cursor-pointer" variant="link" asChild>
-                            <Link href='/cv'>Visita mi cv</Link>
+                            <Link href="/cv">Visita mi cv</Link>
                         </Button>
                     )}
                     <a href="/assets/cv.pdf" target="_blank">
@@ -106,7 +107,7 @@ const Contact: FC<ContactSectionProps> = ({ linkForCv = false }) => {
                         </Button>
                     </a>
                 </CardFooter>
-            </Card>
+            </ClientCard>
         </article>
     );
 };
