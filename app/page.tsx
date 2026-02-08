@@ -2,18 +2,16 @@ import AboutMe from '@/components/sections/AboutMe';
 import WorkExperience from '@/components/sections/WorkExperience';
 import SkillsAchievements from '@/components/sections/SkillsAchievements';
 import Contact from '@/components/sections/Contact';
-import Navbar from '@/components/sections/Navbar';
-import Footer from '@/components/sections/Footer';
+import Studies from '@/components/sections/Studies';
 
 export default function CV() {
     return (
         <main>
-            <Navbar />
             <AboutMe />
+            <Studies />
             <WorkExperience />
             <SkillsAchievements />
             <Contact linkForCv />
-            <Footer />
         </main>
     );
 }
