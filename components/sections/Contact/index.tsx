@@ -4,8 +4,13 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { FaWhatsapp, FaPhone, FaEnvelope, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
-const Contact: FC = () => {
+export interface ContactSectionProps {
+    linkForCv?: boolean;
+}
+
+const Contact: FC<ContactSectionProps> = ({ linkForCv = false }) => {
     return (
         <article
             className="mt-12 mb-12 flex flex-col gap-5 w-full justify-center px-6"
@@ -90,6 +95,11 @@ const Contact: FC = () => {
                     </div>
                 </CardContent>
                 <CardFooter className="flex justify-center">
+                    {linkForCv && (
+                        <Button size="lg" className="cursor-pointer" variant="link" asChild>
+                            <Link href='/cv'>Visita mi cv</Link>
+                        </Button>
+                    )}
                     <a href="/assets/cv.pdf" target="_blank">
                         <Button size="lg" className="cursor-pointer">
                             Descarga mi CV

@@ -12,7 +12,7 @@ export default function CV() {
             <AboutMe />
             <WorkExperience />
             <SkillsAchievements />
-            <Contact />
+            <Contact linkForCv />
             <Footer />
         </main>
     );
